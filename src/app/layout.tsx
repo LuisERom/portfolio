@@ -1,9 +1,9 @@
+// Imports
 import ThemeToggle from "@/components/ThemeToggle"; // Add this
-
 import "./globals.css";
 import { ReactNode } from "react";
-
 import Link from "next/link";
+
 
 
 export const metadata = {
