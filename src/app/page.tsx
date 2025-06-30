@@ -1,7 +1,7 @@
 // src/app/page.tsx
 'use client';
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 
@@ -101,7 +101,7 @@ export default function Home() {
   return (
     <div className="p-6 max-w-4xl mx-auto">
 
-      <h1 className="text-4xl font-bold mb-4">Luis Román's Portfolio</h1>
+      <h1 className="text-4xl font-bold mb-4">Luis Román&apos;s Portfolio</h1>
 
       <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-6">
         ⚙️ Electronics & Embedded Systems &nbsp;&nbsp;🧠 AI & Machine Learning &nbsp;&nbsp;🔬 Research & Innovation &nbsp;&nbsp;🚀 Entrepreneurship

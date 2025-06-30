@@ -3,6 +3,9 @@ import ThemeToggle from "@/components/ThemeToggle"; // Add this
 import "./globals.css";
 import { ReactNode } from "react";
 
+import Link from "next/link";
+
+
 export const metadata = {
   title: "Luis Román — Portfolio",
   description: "Projects, research, and startups by Luis Román.",
@@ -35,10 +38,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <nav className="flex justify-between max-w-5xl mx-auto">
             <h1 className="text-xl font-semibold">Luis Román</h1>
             <ul className="flex gap-4 text-sm items-center">
-              <li><a href="/" className="hover:underline">Home</a></li>
-              <li><a href="/projects" className="hover:underline">Projects</a></li>
-              <li><a href="/experience" className="hover:underline">Experience</a></li>
-              <li><a href="/contact" className="hover:underline">Contact</a></li>
+              <li><Link href="/" className="hover:underline">Home</Link></li>
+              <li><Link href="/projects" className="hover:underline">Projects</Link></li>
+              <li><Link href="/experience" className="hover:underline">Experience</Link></li>
+              <li><Link href="/contact" className="hover:underline">Contact</Link></li>
               <li><ThemeToggle /></li> {/* Replace button with component */}
             </ul>
           </nav>
