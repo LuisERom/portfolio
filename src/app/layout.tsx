@@ -7,7 +7,7 @@ import Link from "next/link";
 
 
 export const metadata = {
-  title: "Luis Román — Portfolio",
+  title: "LERL — Portfolio",
   description: "Projects, research, and startups by Luis Román.",
 };
 
@@ -36,11 +36,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="min-h-screen bg-white text-black dark:bg-zinc-900 dark:text-white font-sans">
         <header className="p-4 border-b border-zinc-200 dark:border-zinc-700">
           <nav className="flex justify-between max-w-5xl mx-auto">
-            <h1 className="text-xl font-semibold">Luis Román</h1>
+            <h1 className="text-xl font-semibold">Luis E. Román Lizasoain</h1>
             <ul className="flex gap-4 text-sm items-center">
-              <li><Link href="/" className="hover:underline">Home</Link></li>
-              <li><Link href="/projects" className="hover:underline">Projects</Link></li>
-              <li><Link href="/experience" className="hover:underline">Experience</Link></li>
+              <li><Link href="/" className="hover:underline">Projects</Link></li>
               <li><Link href="/contact" className="hover:underline">Contact</Link></li>
               <li><ThemeToggle /></li> {/* Replace button with component */}
             </ul>

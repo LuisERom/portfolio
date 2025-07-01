@@ -7,14 +7,14 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Electrical Engineering at PUPR",
+    title: "B.S. in Electrical Engineering",
     description: "Completed coursework, capstone project, and multiple research/startup initiatives.",
     tags: ["Academic"],
     details: "Studied electrical engineering at the Polytechnic University of Puerto Rico from 2020 to 2025. Took core and advanced courses in electronics, systems, and engineering design. Simultaneously led research in photonics, launched a startup, and collaborated with labs at UGA and UC Berkeley.",
     date: "2020 – 2025",
   },
   {
-    title: "Roblox Game",
+    title: "Knockout - Roblox Game",
     description: "Custom multiplayer experience with game logic scripting.",
     tags: ["Code", "Game Dev"],
     details: "Built a Roblox game focusing on multiplayer mechanics, using Lua for scripting and monetization features.",
@@ -28,45 +28,45 @@ const projects = [
     date: "2021 – 2022",
   },
   {
-    title: "Vienvo Startup",
+    title: "Vienvo - Cable Management Startup",
     description: "Cable management startup with hardware prototypes.",
     tags: ["Entrepreneurship", "Electronics"],
     details: "Created a modular cable hub, conducted 500+ user interviews, and tested market demand. Shut down after validation phase.",
     date: "2022",
   },
   {
-    title: "Lutron Internship",
+    title: "Quality Engineer Intern - Lutron Internship",
     description: "7-month quality engineering internship in automation.",
     tags: ["Electronics", "Industry"],
     details: "Automated QA procedures for lighting control hardware and wrote test software for product validation.",
     date: "2023 – 2024",
   },
   {
-    title: "Baby Heat Death Prevention System",
+    title: "Year 4 Research - Baby Heat Death Prevention System",
     description: "Sensor system to detect and alert if a baby is left in a hot car.",
     tags: ["Electronics", "Research"],
     details: "Built an embedded system with heat/humidity sensors, microcontroller, and wireless alert features for infant safety.",
     date: "2023 – 2024",
   },
   {
-    title: "UGA Photonics Project",
+    title: "Year 5 Research - UGA Photonics Project",
     description: "Photonic STDP neural circuit with machine learning.",
     tags: ["AI", "Electronics", "Research"],
     details: "Designed and simulated a photonic circuit implementing spike-timing-dependent plasticity with supervised ML.",
     date: "2024 – 2025",
   },
   {
-    title: "UC Berkeley Research",
+    title: "Summer Research - UC Berkeley SUPERB Program",
     description: "DNA origami biosensor project for molecular detection.",
     tags: ["Research", "Bioengineering"],
     details: "Worked with Dr. Tikhomirov's lab on DNA origami and fluorescence-based molecule detection for biosensing applications.",
     date: "2024",
   },
   {
-    title: "Currently Building AI Consulting Business",
-    description: "Creating offline AI systems that help businesses become self-optimizing.",
-    tags: ["AI", "Entrepreneurship"],
-    details: "Developing a system that collects internal business data, analyzes global context, and recommends real-time actions to help owners achieve goals like growth, free time, and resilience. Early focus on healthcare and operations-heavy industries.",
+    title: "Startup",
+    description: "Research Laboratory Automation",
+    tags: ["Entrepreneurship"],
+    details: "...",
     date: "2025 – Present",
   },
 ];
@@ -95,13 +95,13 @@ export default function Home() {
     groups[year].push(project);
     return groups;
   }, {} as { [year: string]: Project[] });
-  
+
   const sortedYears = Object.keys(groupedProjects).sort((a, b) => b.localeCompare(a));
 
   return (
     <div className="p-6 max-w-4xl mx-auto">
 
-      <h1 className="text-4xl font-bold mb-4">Luis Román&apos;s Portfolio</h1>
+      <h1 className="text-4xl font-bold mb-4">Portfolio</h1>
 
       <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-6">
         ⚙️ Electronics & Embedded Systems &nbsp;&nbsp;🧠 AI & Machine Learning &nbsp;&nbsp;🔬 Research & Innovation &nbsp;&nbsp;🚀 Entrepreneurship
@@ -135,6 +135,7 @@ export default function Home() {
                 <div className="absolute -left-[10px] top-1.5 w-3 h-3 bg-blue-600 rounded-full group-hover:scale-110 transition" />
                 <h2 className="text-xl font-semibold">{project.title}</h2>
                 <p className="text-zinc-600 dark:text-zinc-300">{project.description}</p>
+                <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">{project.date}</p>
                 <div className="mt-2 flex flex-wrap gap-1 text-xs">
                   {project.tags.map(tag => (
                     <span
@@ -177,6 +178,7 @@ export default function Home() {
           >
             <h3 className="text-2xl font-bold mb-2">{selectedProject.title}</h3>
             <p className="text-zinc-600 dark:text-zinc-300 mb-4">{selectedProject.details}</p>
+            <p className="text-xs text-zinc-500 dark:text-zinc-400 mb-4">{selectedProject.date}</p>
             <button onClick={() => setSelectedProject(null)} className="text-blue-600 hover:underline text-sm">
               Close
             </button>
