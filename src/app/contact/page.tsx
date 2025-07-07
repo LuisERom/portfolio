@@ -4,7 +4,7 @@ export default function ContactPage() {
       <h1 className="text-3xl font-bold mb-4">Contact Me</h1>
 
       <p className="text-zinc-600 dark:text-zinc-400 mb-6">
-        Feel free to reach out if you're interested in collaborating, have questions, or just want to connect.
+        Feel free to reach out if you&rsquo;re interested in collaborating, have questions, or just want to connect.
       </p>
 
       <ul className="space-y-4 text-sm">

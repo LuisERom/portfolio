@@ -10,7 +10,6 @@ import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
 import Captions from "yet-another-react-lightbox/plugins/captions";
-import { image } from "framer-motion/client";
 
 type Project = {
   title: string;

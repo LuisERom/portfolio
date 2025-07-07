@@ -13,7 +13,7 @@ export default function ThemeInit() {
       } else {
         document.documentElement.classList.remove("dark");
       }
-    } catch (_) {}
+    } catch {}
   }, []);
 
   return null;
