@@ -5,21 +5,21 @@ export default function CurrentFocus() {
     const focuses = [
         {
             title: "AI-Powered Research Assistant",
-            description: "Working on an early-stage project that brings together AI, robotics, and life sciences. I’m exploring how automation can transform scientific research and open new possibilities for discovery in the lab. Currently participating in the NSF I-Corps program to explore customer needs and validate the concept.",
+            description: "Working on an early-stage project that brings together AI, robotics, and life sciences. I’m exploring how automation can transform scientific research and open new possibilities for discovery in the lab.",
             tags: ["Entrepreneurship", "Research", "AI"],
-            link: "mailto:you@example.com",
+            link: "mailto:luiseroman21@gmail.com",
             linkText: "Want to share your lab frustrations?",
             emoji: "🔍"
         },
         {
             title: "Applying to Graduate School",
-            description: "Pursuing advanced research opportunities in Electrical Engineering.",
+            description: "Applying to PhD programs in Electrical Engineering.",
             tags: ["Academic"],
             emoji: "🎓"
         },
         {
             title: "UGA OTDR Fiber Authentication",
-            description: "Developing a machine learning and rule-based system to identify and authenticate single-mode optical fibers using OTDR backscatter data. Built a Python pipeline with SVM classification, achieving 98.5 % accuracy across eight fibers. Currently enhancing feature extraction to define unique rule-based patterns for improved authentication reliability.",
+            description: "Developing a machine learning and rule-based system to identify and authenticate single-mode optical fibers using OTDR backscatter data. Built a Python pipeline with SVM classification, achieving 98.5% accuracy across eight fibers. Currently enhancing feature extraction to define unique rule-based patterns for improved authentication reliability.",
             tags: ["Research", "Hardware", "Academic"],
             emoji: "🔬"
         }

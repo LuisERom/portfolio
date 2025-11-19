@@ -13,6 +13,27 @@ export const tagStyles: { [key: string]: string } = {
 
 export const projects: Project[] = [
     {
+        title: "NSF I-Corps Program - AI-Powered Research Assistant",
+        workimage: "/images/NSF-I-CORPS-Logo.png",
+        description: "NSF-funded entrepreneurship program focused on translating lab technologies to the market through customer discovery.",
+        status: "Completed — Led 100 structured customer discovery interviews with PIs and graduate students",
+        tags: ["Entrepreneurship"],
+        details: "Selected for the NSF I-Corps Puerto Rico 20th cohort to test whether a lab-automation concept (LabOS) solved real problems in academic research environments. Over six weeks, I led 100 customer discovery interviews with PIs and graduate students to map experimental workflows, surface pain points, and understand how human error and protocol variability contribute to failed experiments. \n\n" +
+            "Through the I-Corps curriculum, I refined our problem and customer hypotheses, iterated on the value proposition, and evaluated the potential academic use cases for LabOS. The program strengthened my skills in evidence-based entrepreneurship, customer discovery, and early business model design grounded in real researcher feedback.",
+        date: "Oct 2025 – Nov 2025",
+        images: [
+            {
+                src: "/images/NSF-I-CORPS-Logo.png",
+                alt: "NSF I-Corps logo"
+            },
+            {
+                src: "/images/I-Corps_Certificate_LuisRoman.jpg",
+                alt: "I-Corps program completion certificate",
+                caption: "I-Corps program completion certificate"
+            }
+        ],
+    },
+    {
         title: "B.S. in Electrical Engineering",
         workimage: "/images/PUPR.jpeg",
         description: "Completed coursework, capstone project, and multiple research/startup initiatives at the same time.",
@@ -28,7 +49,7 @@ export const projects: Project[] = [
             {
                 src: "/images/Grad_Img.jpg",
                 alt: "Graduation Photo",
-                caption: "Graduation Photo"
+                caption: "Graduation photo"
             }
         ],
     },
