@@ -10,18 +10,6 @@ export default function CurrentFocus() {
             link: "mailto:luiseroman21@gmail.com",
             linkText: "Want to share your lab frustrations?",
             emoji: "🔍"
-        },
-        {
-            title: "Applying to Graduate School",
-            description: "Applying to PhD programs in Electrical Engineering.",
-            tags: ["Academic"],
-            emoji: "🎓"
-        },
-        {
-            title: "UGA OTDR Fiber Authentication",
-            description: "Developing a machine learning and rule-based system to identify and authenticate single-mode optical fibers using OTDR backscatter data. Built a Python pipeline with SVM classification, achieving 98.5% accuracy across eight fibers. Currently enhancing feature extraction to define unique rule-based patterns for improved authentication reliability.",
-            tags: ["Research", "Hardware", "Academic"],
-            emoji: "🔬"
         }
     ];
 
