@@ -5,7 +5,7 @@ export default function CurrentFocus() {
     const focuses = [
         {
             title: "AI-Powered Research Assistant",
-            description: "Working on an early-stage project that brings together AI, robotics, and life sciences. I’m exploring how automation can transform scientific research and open new possibilities for discovery in the lab.",
+            description: "Working on an early-stage project that brings together AI and life sciences.",
             tags: ["Entrepreneurship", "Research", "AI"],
             link: "mailto:luiseroman21@gmail.com",
             linkText: "Want to share your lab frustrations?",
