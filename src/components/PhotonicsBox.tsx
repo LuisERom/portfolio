@@ -1,5 +1,9 @@
 'use client';
 
+/**
+ * Decorative canvas inside the Photonics interest box: draws a curved “fiber” and animates bright pulses
+ * traveling along it on a short loop. Sized to the container; no user input — visual flair only.
+ */
 import { useEffect, useRef } from 'react';
 
 interface Pulse {

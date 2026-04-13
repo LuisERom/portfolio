@@ -1,5 +1,9 @@
 'use client';
 
+/**
+ * Fake terminal window for the Programming interest box: cycles through sample commands, types them out,
+ * then prints mock “build output” lines on a timer. Loops forever for a screensaver-like effect — not a real shell.
+ */
 import { useEffect, useState, useRef, useMemo } from 'react';
 import { motion } from 'framer-motion';
 

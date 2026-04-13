@@ -1,5 +1,9 @@
 'use client';
 
+/**
+ * Decorative canvas for the Electronics interest box: draws an IC-style package, animates pins, and shows
+ * moving signals along traces. Resizes with its container; purely visual — no controls.
+ */
 import { useEffect, useRef } from 'react';
 
 interface Pin {

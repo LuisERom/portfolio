@@ -1,3 +1,7 @@
+/**
+ * Homepage section titled “Current Focus”: static list of highlighted current work (title, short blurb, emoji).
+ * Each card can show tag pills and an optional link (e.g. mailto). Content lives in the `focuses` array below.
+ */
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -6,10 +10,7 @@ export default function CurrentFocus() {
         {
             title: "AI-Powered Research Assistant",
             description: "Working on an early-stage project that brings together AI and life sciences.",
-            tags: ["Entrepreneurship", "Research", "AI"],
-            link: "mailto:luiseroman21@gmail.com",
-            linkText: "Want to share your lab frustrations?",
-            emoji: "🔍"
+            tags: ["Entrepreneurship", "Research", "AI"]
         }
     ];
 
@@ -41,20 +42,12 @@ export default function CurrentFocus() {
                             default: { duration: 0.15, ease: "easeOut" }
                         }}
                     >
-                        <div className="absolute -top-2 -right-2 text-2xl">{focus.emoji}</div>
                         <h2 className="text-xl font-semibold text-zinc-900 dark:text-white mb-2 pr-8">
                             {focus.title}
                         </h2>
                         <p className="text-zinc-600 dark:text-zinc-300 text-sm mb-3">
                             {focus.description}
                         </p>
-                        {focus.link && (
-                            <p className="mb-3 text-sm">
-                                <a href={focus.link} className="text-blue-600 dark:text-blue-400 underline">
-                                    {focus.linkText}
-                                </a>
-                            </p>
-                        )}
                         <div className="mt-2 flex flex-wrap gap-1 text-xs">
                             {focus.tags.map((tag, tagIndex) => {
                                 const tagColors: { [key: string]: string } = {

@@ -1,5 +1,9 @@
 'use client';
 
+/**
+ * Section wrapper with the heading “I’m interested in…” and a 2×2 grid of small themed panels.
+ * Each cell imports its own animated widget (brain, fiber, chip, terminal) so this file mostly handles layout and motion on scroll.
+ */
 import { motion } from 'framer-motion';
 import BrainActivity from './BrainActivity';
 import PhotonicsBox from './PhotonicsBox';

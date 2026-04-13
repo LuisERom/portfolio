@@ -1,5 +1,10 @@
 'use client';
 
+/**
+ * Full-page canvas effect: draws expanding wave ripples and how they interact with on-screen content.
+ * Click-to-spawn waves are disabled for now, but the code still maps page elements as “obstacles” so
+ * the effect can be wired back up later without redoing layout tracking.
+ */
 import { useState, useEffect, useRef } from 'react';
 
 interface Wave {
