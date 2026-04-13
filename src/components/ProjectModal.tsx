@@ -1,3 +1,8 @@
+/**
+ * Modal layer for one project: title, narrative text, tech tags, external links, image carousel, and optional logo.
+ * Gallery images can open in a lightbox (zoom + captions); lightbox slides/index state are lifted to the parent so one lightbox instance can be shared.
+ * While mounted, forces dark theme, adds `modal-open` on <body> to hide the site chrome, and cleans up on close.
+ */
 import React, { useState, useEffect, useRef } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";

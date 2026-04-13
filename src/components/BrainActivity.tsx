@@ -1,5 +1,9 @@
 'use client';
 
+/**
+ * Stylized brain diagram (SVG): fixed nodes and links between them; a timed sequence highlights nodes and edges
+ * to look like activity spreading through the brain. Watches the root `dark` class so lines and fills stay readable.
+ */
 import { useEffect, useState, useCallback, useMemo } from 'react';
 import { motion } from 'framer-motion';
 

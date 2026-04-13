@@ -1,3 +1,8 @@
+/**
+ * Project timeline view: takes projects already grouped by year and prints one year block at a time.
+ * Each year shows a divider label, then a zig-zag column of ProjectCards (left/right for readability).
+ * When the user picks a project, this component only forwards the click — the parent opens the modal.
+ */
 import React from "react";
 import { motion } from "framer-motion";
 import { Project } from "@/types";

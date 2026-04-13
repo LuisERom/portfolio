@@ -1,3 +1,7 @@
+/**
+ * Filter bar for the projects area: one pill button per tag from `@/data/projects` (e.g. “All”, topic tags).
+ * Clicking a pill calls `onTagChange` so the parent can recompute which projects to show; the active pill gets distinct styling.
+ */
 import React from "react";
 import { motion } from "framer-motion";
 import { tags } from "@/data/projects";

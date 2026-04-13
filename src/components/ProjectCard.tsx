@@ -1,3 +1,8 @@
+/**
+ * One project entry in the timeline: thumbnail logo, title, description snippet, tag chips, and extra images.
+ * Cards slide in when they scroll near the viewport; clicking anywhere on the card runs the parent’s onClick (opens ProjectModal).
+ * `isLeft` controls which side of the timeline the card sits on and flips text alignment on wide screens.
+ */
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Project } from "@/types";

@@ -12,13 +12,10 @@ export default function ContactPage() {
           📧 Email: <a href="mailto:luiseroman21@gmail.com" className="text-blue-600 hover:underline">luiseroman21@gmail.com</a>
         </li>
         <li>
-          💼 LinkedIn: <a href="https://www.linkedin.com/in/luiserom/" className="text-blue-600 hover:underline" target="_blank">linkedin.com/in/yourprofile</a>
+          💼 LinkedIn: <a href="https://www.linkedin.com/in/luiserom/" className="text-blue-600 hover:underline" target="_blank">linkedin.com/in/luiserom</a>
         </li>
         <li>
           💻 GitHub: <a href="https://github.com/LuisERom" className="text-blue-600 hover:underline" target="_blank">github.com/LuisERom</a>
-        </li>
-        <li>
-          📄 Resume: <a href="/LuisRomanResume.pdf" className="text-blue-600 hover:underline" download>Download PDF</a>
         </li>
       </ul>
     </div>
