@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           }}
         />
       </head>
-      <body className="min-h-screen bg-zinc-100 text-black dark:bg-zinc-900 dark:text-white font-sans">
+      <body className="min-h-screen flex flex-col bg-zinc-100 text-black dark:bg-zinc-900 dark:text-white font-sans">
         <ThemeInit />
         <header className="sticky top-0 z-50 p-4 border-b border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-900 backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95">
           <nav className="flex justify-between max-w-5xl mx-auto">
@@ -35,7 +35,15 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             </ul>
           </nav>
         </header>
-        <main className="max-w-5xl mx-auto p-6 relative z-10">{children}</main>
+        <main className="max-w-5xl mx-auto p-6 relative z-10 flex-1">{children}</main>
+        <footer className="border-t border-zinc-200 dark:border-zinc-700 mt-auto">
+          <div className="max-w-5xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between gap-2 text-sm text-zinc-600 dark:text-zinc-400">
+            <span>© {new Date().getFullYear()} Luis E. Román Lizasoain</span>
+            <Link href="/privacy" className="hover:underline">
+              Privacy
+            </Link>
+          </div>
+        </footer>
       </body>
     </html>
   );
